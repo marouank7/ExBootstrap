@@ -80,6 +80,27 @@ header{
     align-items: center;
 }
 
+.imgBackgroundPortfolio{
+    background:url('img/laptop.png');
+    background-size: cover;
+    height: 80vh;
+}
+
+.checkIcon{
+    color: #9cc276;
+    font-size: 50px;
+}
+
+.allTheProjects{
+    color: #b9bdc0;
+}
+
+.textPortfolio{
+    color: #aeaeae;
+    background-color: #f5f2eb;
+    opacity: 0,6;
+}
+
 /** bootstrap override **/
 .card-title {
     font-size: 1.1rem;
