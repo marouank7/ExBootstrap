@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExBootstrap</title>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
+
+    <script src="https://kit.fontawesome.com/1eb810bdc5.js" crossorigin="anonymous"></script>
+
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <!-- Barre de navigation -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light transparent" id="navbar">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -39,38 +49,174 @@
                     </div>
                 </ul>
             </div>
+ 
     </nav>
 
     <!-- Header -->
 
     <header class="" id="top">
-        <div>
-            <H1 class="text-light text-left">LOREM IPSUM TITLE</H1>
-            <h5 class="text-light text-left">SUBTITLE</h5>
+        <div id="top-content">
+            <H1 class="text-light">LOREM IPSUM TITLE</H1>
+            <h5 class="text-light">SUBTITLE</h5>
         </div>
-        
+        <div id="chevron-container">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </header>
 
+    <!-- Our Products -->
 
+    <section id="OurProducts" class="my-5 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="info-header mb-5">
+                        <h2 class="pb-3">Our Products</h2>
+                        <p class="lead text-secondary pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolore nam voluptatem. Maxime, aspernatur iure!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 rounded-corners">
+                    <div class="card">
+                        <img src="img/aurore.jpg" class="card-img-top mb-3 imgSize">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/paysage.jpg" class="card-img-top mb-3 imgSize">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/plage.jpg" class="card-img-top mb-3 imgSize">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/ski.jpg" class="card-img-top mb-3 imgSize">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/usa.jpg" class="card-img-top mb-3 imgSize">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="img/vagueSoleil.jpg" class="card-img-top mb-3 imgSize">
+                        <div class="card-body">
+                            <h3 class="card-title">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Medias -->
 
+    <section id="medias" class="my-5 text-center">
+        <div class="container">
+            <div class="row d-flex flex-column">
+                <div  class="col-4 mx-auto">
+                    <img src="img/responsive (1).png" alt="multimedia" id="imgMedia">
+                    <h2 class="text-center my-5">MEDIAS</h2>
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aperiam, facilis eligendi, ipsam praesentium molestias optio placeat quae amet eos recusandae corporis commodi repellendus molestiae adipisci dolore veritatis quas asperiores!</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div>
+                        <div class="roundedIconeMedias mx-auto">
+                            <i class="fas fa-power-off iMedias"></i>
+                        </div>
+                        <div>
+                            <h3 class="my-3">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div>
+                        <div class="roundedIconeMedias mx-auto">
+                            <i class="far fa-flag iMedias"></i>
+                        </div>
+                        <div>
+                            <h3 class="my-3">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div>
+                        <div class="roundedIconeMedias mx-auto">
+                            <i class="fas fa-anchor iMedias"></i>
+                        </div>
+                        <div>
+                            <h3 class="my-3">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div>
+                        <div class="roundedIconeMedias mx-auto">
+                            <i class="fas fa-paragraph iMedias"></i>
+                        </div>
+                        <div>
+                            <h3 class="my-3">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div>
+                        <div class="roundedIconeMedias mx-auto">
+                            <i class="fas fa-umbrella iMedias"></i>
+                        </div>
+                        <div>
+                            <h3 class="my-3">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div>
+                        <div class="roundedIconeMedias mx-auto">
+                            <i class="fas fa-toggle-on iMedias"></i>
+                        </div>
+                        <div>
+                            <h3 class="my-3">Lorem</h3>
+                            <h5 class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sapiente.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
