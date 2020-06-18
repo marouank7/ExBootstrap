@@ -13,7 +13,6 @@ body{
 }
 
 #navbar{
-    /* background-color: transparent; */
     transition: background-color 1s;
 }
 
@@ -28,8 +27,8 @@ header{
 }
 
 #imgMedia{
-    height: 500px;
-    width: 650px;
+    height: auto;
+    width: 100%;
 }
 
 #top {
@@ -129,7 +128,7 @@ a:hover{
     position: relative;
 }
 #valideEmail {
-    position: absolute;
+    /* position: absolute; */
     color: red;
 }
 
@@ -138,13 +137,15 @@ a:hover{
 }
 
 #inputEmail{
-    flex: 0 0 40%;
+    flex: 0 0 60%;
     background-color: #ededed;
     color: #aeaeae;
     border : none;
 }
 
-
+.footer{
+    width: 100%;
+}
 
 /** bootstrap override **/
 .card-title {
@@ -161,4 +162,29 @@ a:hover{
     flex: 0 0 40%;
     background-color: #89c74c;
     /* border-top-right-radius: "4px"; */
+}
+
+
+#newsLetter {
+    display: flex;
+}
+
+@media screen and (max-width: 1100px) { 
+    #newsLetter {
+        flex-direction: column;
+    }
+    .nav-item{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) { 
+    #imgMedia {
+        height: auto;
+        width: 200%;
+    }
+    .footer{
+        width: 100%;
+    }
+
 }

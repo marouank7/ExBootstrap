@@ -1,9 +1,27 @@
-// attach a callback function to window scroll event
-window.onscroll = function() {toggleNavClassOnScroll()};
+$(document).ready(function () {
+  // attach a callback function to window scroll event
+  window.onscroll = function () {
+    toggleNavClassOnScroll();
+  };
 
-// get a ref to the navbar in memory
-let navbar = document.getElementById("navbar");
+  // get dom element in memory
+  let emailValidationLabel = $("#valideEmail");
+  let navbar = $("#navbar");
 
+  emailValidationLabel.hide();
+
+  $("#submit").click(function (event) {
+    var email = $("#inputEmail").val();
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,5})+$/;
+
+    if (filter.test(email)) {
+      emailValidationLabel.hide();
+    } else {
+      event.preventDefault();
+      emailValidationLabel.show();
+    }
+  });
+});
 
 function toggleNavClassOnScroll() {
   // apply a style class based on the current state of the scrolling
@@ -17,22 +35,3 @@ function toggleNavClassOnScroll() {
     navbar.classList.add("navbar-light");
   }
 }
-
-$(document).ready(function(){
-  
-  $('#valideEmail').hide()
-
-  $('#submit').click(function(event){
-      
-      var email = $('#inputEmail').val()
-      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,5})+$/;
-
-      if(filter.test(email) ){
-          $('#valideEmail').hide()
-      }else{
-          event.preventDefault()
-          $('#valideEmail').show()
-      }
-
-  })
-})

@@ -21,7 +21,7 @@
     
     <!-- Barre de navigation -->
 
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light transparent" id="navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarToggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +29,7 @@
                 <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center">
                     <div class="d-flex flex-row">
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-light">Home</a> 
+                            <a href="#top" class="nav-link text-light">Home</a> 
                         </li>
                         <li class="nav-item">
                             <a href="#ourProducts" class="nav-link text-light">Products</a> 
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 rounded-corners">
+                <div class="col-lg-4 col-md-6 mb-4 ">
                     <div class="card">
                         <a href="#"><img src="img/aurore.jpg" class="card-img-top mb-3 imgSize"></a>
                         <div class="card-body">
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
                         <a href="#"><img src="img/paysage.jpg" class="card-img-top mb-3 imgSize"></a>
                         <div class="card-body">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
                         <a href="#"><img src="img/plage.jpg" class="card-img-top mb-3 imgSize"></a>
                         <div class="card-body">
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
                         <a href="#"><img src="img/ski.jpg" class="card-img-top mb-3 imgSize"></a>
                         <div class="card-body">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
                         <a href="#"><img src="img/usa.jpg" class="card-img-top mb-3 imgSize"></a>
                         <div class="card-body">
@@ -126,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
                         <a href="#"><img src="img/vagueSoleil.jpg" class="card-img-top mb-3 imgSize"></a>
                         <div class="card-body">
@@ -144,8 +144,8 @@
     <section id="medias" class="my-5 text-center">
         <div class="container">
             <div class="row d-flex flex-column">
-                <div  class="col-4 mx-auto">
-                    <img src="img/responsive (1).png" alt="multimedia" id="imgMedia">
+                <div  class="col mx-auto">
+                    <img src="img/responsive (1).png" style="width: 100%;" alt="multimedia" id="imgMedia">
                     <h2 class="text-center my-5">MEDIAS</h2>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aperiam, facilis eligendi, ipsam praesentium molestias optio placeat quae amet eos recusandae corporis commodi repellendus molestiae adipisci dolore veritatis quas asperiores!</p>
                 </div>
@@ -268,21 +268,22 @@
             </div>
         </div>
         <div class="container-fluid">
-            <div class="d-flex flex-row my-5 py-5 px-5" id="newsLetter">
-                <h2 class="ml-5" id="subscribe">Subscribe to our newsletter</h2>
-                <div class="input-group mb-3 justify-content-center">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" style="border : none"><i class="fas fa-paper-plane iconInput"></i></span>
+            <div class="justify-content-between my-5 py-5 px-5" id="newsLetter">
+                <h2 id="subscribe">Subscribe to our newsletter</h2>
+                <div class="footer">
+                    <div class="input-group mb-3 justify-content-center">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="border : none"><i class="fas fa-paper-plane iconInput"></i></span>
+                        </div>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" class="form-control" required="required"></input>
+                        <div class="input-group-prepend">
+                            <button type="submit" id="submit"class="btn btn-success sendButton" style="border-top-right-radius: 4px; border-bottom-right-radius: 4px; border : none">Send</button> 
+                        </div>
                     </div>
-                    <div id="emailInputContainer">
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" value="Enter your email" class="form-control" required="required"></input>
-                        <h6 id="valideEmail">Votre email n'est pas valide.</h6>
-                    </div>
-                    <div class="input-group-prepend">
-                        <button type="submit" id="submit"class="btn btn-success sendButton" style="border-top-right-radius: 4px; border-bottom-right-radius: 4px; border : none">Send</button>
-                    </div>
+                    <h6 id="valideEmail">Votre email n'est pas valide.</h6>
                 </div>
             </div>
+            
         </div>
     </section>
 
