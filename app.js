@@ -25,8 +25,9 @@ $(document).ready(function(){
   $('#submit').click(function(event){
       
       var email = $('#inputEmail').val()
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,5})+$/;
 
-      if(email.length > 5 && email.includes('@') && email.includes('.')){
+      if(filter.test(email) ){
           $('#valideEmail').hide()
       }else{
           event.preventDefault()
