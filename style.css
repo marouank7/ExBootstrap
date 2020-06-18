@@ -1,6 +1,10 @@
 /* btn-english{
     border:black;
 } */
+html{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -101,6 +105,38 @@ header{
     opacity: 0,6;
 }
 
+.textContact{
+    color : #929ba1;
+}
+
+#newsLetter{
+    background-color: #f9f9f9 ;
+}
+.iconInput{
+    color : #83909d;
+}
+
+#emailInputContainer {
+    position: relative;
+}
+#valideEmail {
+    position: absolute;
+    color: red;
+}
+
+#subscribe{
+    flex: 0 0 40%;
+}
+
+#inputEmail{
+    flex: 0 0 40%;
+    background-color: #ededed;
+    color: #aeaeae;
+    border : none;
+}
+
+
+
 /** bootstrap override **/
 .card-title {
     font-size: 1.1rem;
@@ -110,4 +146,10 @@ header{
 .card {
     border-radius: 1rem;
     box-shadow: 1px 1px 5px lightgray;
+}
+
+.sendButton{
+    flex: 0 0 40%;
+    background-color: #89c74c;
+    /* border-top-right-radius: "4px"; */
 }

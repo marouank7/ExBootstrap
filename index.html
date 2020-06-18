@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExBootstrap</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -29,17 +29,17 @@
                 <ul class="navbar-nav w-100 d-flex justify-content-around align-items-center">
                     <div class="d-flex flex-row">
                         <li class="nav-item">
-                            <a href="" class="nav-link text-light">Products</a> 
+                            <a href="#ourProducts" class="nav-link text-light">Products</a> 
                          </li>
-                         <li class="nav-item">
-                             <a href="" class="nav-link  text-light">Services</a> 
+                          <li class="nav-item">
+                             <a href="#medias" class="nav-link  text-light">Medias</a> 
                           </li>
                           <li class="nav-item">
-                             <a href="" class="nav-link  text-light">Medias</a> 
+                             <a href="#portfolio" class="nav-link  text-light">Portfolio</a> 
                           </li>
                           <li class="nav-item">
-                             <a href="" class="nav-link  text-light">Portfolio</a> 
-                          </li>
+                            <a href="#contact" class="nav-link  text-light">Contact</a> 
+                         </li>
                     </div>
                     <div>
                         <div class="text-white">LOGO.</div>
@@ -66,13 +66,14 @@
 
     <!-- Our Products -->
 
-    <section id="OurProducts" class="my-5 text-center">
+    <section id="ourProducts" class="my-5 text-center">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="info-header mb-5">
                         <h2 class="pb-3">Our Products</h2>
-                        <p class="lead text-secondary pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolore nam voluptatem. Maxime, aspernatur iure!</p>
+                        <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam dolore nam voluptatem. Maxime, aspernatur iure!</p>
+                        <p class="lead text-secondary pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
@@ -216,7 +217,7 @@
             </div>
         </div>
     </section>
-    <section id="Portfolio" class="my-5 text-left">
+    <section id="portfolio" class="my-5 text-left">
         <div class="container">
             <div class="row d-flex flex-row">
                 <div class="col-lg-6">
@@ -251,7 +252,31 @@
                     </div>
                 </div>
                 <div class="col-lg-6 imgBackgroundPortfolio">
-
+                </div>
+            </div>
+        </div>
+    </section id="contact" class="my-5 text-center">
+        <div class="container my-5">
+            <div class="row d-flex flex-row">
+                <h1 class="mx-auto my-5">CONTACT</h1>
+                <h2 class="mx-auto mb-5 text-center textContact">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis ipsum assumenda vel corrupti architecto quibusdam, animi quam. Quam cum, nesciunt incidunt ex vel quas!"</h2>
+                <p class="mx-auto"><em>- Franck Chimero</em></p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="d-flex flex-row my-5 py-5 px-5" id="newsLetter">
+                <h2 class="ml-5" id="subscribe">Subscribe to our newsletter</h2>
+                <div class="input-group mb-3 justify-content-center">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="border : none"><i class="fas fa-paper-plane iconInput"></i></span>
+                    </div>
+                    <div id="emailInputContainer">
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" value="Enter your email" class="form-control" required="required"></input>
+                        <h6 id="valideEmail">Votre email n'est pas valide.</h6>
+                    </div>
+                    <div class="input-group-prepend">
+                        <button type="submit" id="submit"class="btn btn-success sendButton" style="border-top-right-radius: 4px; border-bottom-right-radius: 4px; border : none">Send</button>
+                    </div>
                 </div>
             </div>
         </div>

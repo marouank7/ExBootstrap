@@ -17,3 +17,21 @@ function toggleNavClassOnScroll() {
     navbar.classList.add("navbar-light");
   }
 }
+
+$(document).ready(function(){
+  
+  $('#valideEmail').hide()
+
+  $('#submit').click(function(event){
+      
+      var email = $('#inputEmail').val()
+
+      if(email.length > 5 && email.includes('@') && email.includes('.')){
+          $('#valideEmail').hide()
+      }else{
+          event.preventDefault()
+          $('#valideEmail').show()
+      }
+
+  })
+})
