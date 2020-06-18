@@ -64,12 +64,21 @@ header{
     color: white;
     
 }
+
+a:hover{
+    color: inherit;
+    text-decoration: none;
+    color:#aeaeae;
+}
+.linkCard{
+    color: black;
+}
 .iMedias{
     color: #97c05e;
     font-size: 80px;
 }
 
-.card > img {
+.card img {
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
 }
